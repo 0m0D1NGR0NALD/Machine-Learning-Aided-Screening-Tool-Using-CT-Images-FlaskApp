@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #000000;
+    font-family: 'lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff!important;
+}
+
+.result-img {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000000;
+}
+
+th {
+    color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.info {
+    padding-top: 5px;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.header-text {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.table-custom {
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    th {
+        font-size: 20px!important;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+    }
+    td {
+        font-size: 15px!important;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .header-text {
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-size: 20px!important;
+    }
+    .result-img {
+        width: 500px;
+        height: 500px;
+        border: 2px solid #000000;
+    }
+    .header {
+        margin-top: 5%!important;
+    }
+    .info {
+        margin-top: 10%!important;
+    }
+    .table-custom {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .result-img {
+        width: 500px;
+        height: 500px;
+        border: 2px solid #000000;
+    }
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-left: 10px
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    letter-spacing: 2px;
+    padding: 8px 0 8px 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #000000;
+}
+
+.myFile {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    clear: left;
+}
+
+.myFile input[type="file"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    font-size: 100px;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
